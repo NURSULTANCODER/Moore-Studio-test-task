@@ -24,6 +24,7 @@ function calculateShop() {
 
   shopListTittle.innerText = `Корзина (${totalCount})`
   document.querySelector('.order__count').innerText = `Корзина (${totalCount})`
+  document.querySelector('.main__header-shop span').innerText = totalCount
   document.querySelector('.order__price').innerText = totalPrice + 'c'
   document.querySelector('.order__total-price').innerText = totalPrice + 'c'
 }

@@ -26,7 +26,7 @@
       </nav>
       <div class="link">
         <div class="link__email"><span><img src="./assest/icon/email-icon.svg" alt="email icon"></span><a href="#">info@Kanzler.kg</a></div>
-        <div class="link__phone"><span><img src="./assest/icon/phone-icon.svg" alt="phone icon"></span><a href="#">Позвонить</a></div>
+        <div class="link__phone"><span><img src="./assest/icon/phone-icon.svg" alt="phone icon"></span><a href="#">Позвонить</a> <img src="./assest/icon/arrow-min.svg" alt="" style="margin-left: 5px;"></div>
       </div>
     </div>
   </header>
@@ -36,15 +36,18 @@
         <img src="./assest/icon/logo.svg" alt="logo">
       </div>
       <div class="main__header-search">
-        <button>Каталог</button>
+        <button><img class="mr-1" src="./assest/icon/groop.svg" alt="" style="
+          margin-right: 5px;
+      "> Каталог <img class="ml-1" src="./assest/icon/arrow-min.svg" alt="" style="margin-left: 5px;"></button>
         <div class="form-group has-search">
           <span class="fa fa-search form-control-feedback"><img src="./assest/icon/search-icon.svg" alt=""></span>
-          <input type="text" class="form-control" placeholder="Search">
+          <input type="text" class="form-control" placeholder="Найти товар">
         </div>
       </div>
       <div class="main__header-shop-user">
         <div class="main__header-shop">
-          <span><img src="./assest/icon/shop-icon.svg" alt="shop icon"></span>
+          <span>3</span>
+          <img src="./assest/icon/shop-icon.svg" alt="shop icon">
         </div>
         <div class="main__header-user">
           <span><img src="./assest/icon/men-icon.svg" alt="user icon"></span>
@@ -150,7 +153,7 @@
     <div class="ordering">
       <h3>Оформление заказа</h3>
       <form action="#" class="ordering-form">
-        <div class="form-floating mb-3">
+        <div class="form-floating mb-3 margin-rigth">
           <input type="text" class="form-control" id="floatingInput">
           <label for="floatingInput">Имя</label>
         </div>
@@ -158,7 +161,7 @@
           <input type="text" class="form-control" id="floatingInput">
           <label for="floatingInput">Фамилия</label>
         </div>
-        <div class="form-floating mb-3">
+        <div class="form-floating mb-3 margin-rigth">
           <input type="phone" class="form-control" id="floatingInput">
           <label for="floatingInput">Телефон</label>
         </div>
@@ -166,7 +169,7 @@
           <input type="email" class="form-control" id="floatingInput">
           <label for="floatingInput">E-mail</label>
         </div>
-        <div class="form-floating mb-3">
+        <div class="form-floating">
           <input type="phone" class="form-control" id="floatingInput">
           <label for="floatingInput">Доп телефон или whatsapp</label>
         </div>
@@ -176,13 +179,13 @@
 
     <div class="user-status">
       <h3>Я</h3>
-      <div class="form-check">
+      <div class="form-check mb-3">
         <input class="form-check-input" type="radio" name="user-status" id="flexRadioDefault1" checked>
         <label class="form-check-label" for="flexRadioDefault1">
           Физическое лицо
         </label>
       </div>
-      <div class="form-check">
+      <div class="form-check mb-3">
         <input class="form-check-input" type="radio" name="user-status" id="flexRadioDefault2">
         <label class="form-check-label" for="flexRadioDefault2">
           Юридическое лицо
@@ -195,13 +198,13 @@
       <h3>Доставка</h3>
       <div class="delivery-method">
         <h4>Способ  доставки</h4>
-        <div class="form-check">
+        <div class="form-check mb-3">
           <input class="form-check-input" type="radio" name="delivery-method" id="flexRadioDefault1" checked>
           <label class="form-check-label" for="flexRadioDefault1">
             Самовывоз <a href="#">режим работы магазина</a>
           </label>
         </div>
-        <div class="form-check">
+        <div class="form-check mb-3">
           <input class="form-check-input" type="radio" name="delivery-method" id="flexRadioDefault2">
           <label class="form-check-label" for="flexRadioDefault2">
             Курьерская доставка <a href="#">условия доставки</a>
@@ -211,7 +214,7 @@
       <div class="delivery-address">
         <h4>Адрес доставки</h4>
         <form action="#" class="ordering-form">
-          <div class="form-floating mb-3">
+          <div class="form-floating mb-3 margin-rigth" >
             <input type="text" class="form-control" id="floatingInpu">
             <label for="floatingInpu">Страна</label>
           </div>
@@ -219,7 +222,7 @@
             <input type="text" class="form-control" id="floatingInput">
             <label for="floatingInput">Город</label>
           </div>
-          <div class="form-floating mb-3">
+          <div class="form-floating mb-3 margin-rigth">
             <input type="text" class="form-control" id="floatingInput">
             <label for="floatingInput">Улица</label>
           </div>
@@ -227,12 +230,15 @@
             <input type="text" class="form-control" id="floatingInput">
             <label for="floatingInput">Квартира</label>
           </div>
-          <div class="form-floating mb-3">
+          <div class="form-floating">
             <input type="text" class="form-control" id="floatingInput">
             <label for="floatingInput">Квартира</label>
           </div>
           <p>Указать домофон, этаж, подъезд и комментарий к адресу</p>
-
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Комментарий</label>
+          </div>
         </form>
       </div>
     </div>
