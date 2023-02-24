@@ -4,6 +4,13 @@ let totalPrice = 0;
 const orderCount = document.querySelectorAll('.shop-list__item-count')
 const deleteOrder = document.querySelectorAll('.shop-list__item-delete')
 const shopListTittle = document.querySelector('.shop-list__title h2')
+const arrow = document.querySelector('.shop-list__title span')
+
+arrow.addEventListener('click', () => {
+  arrow.classList.toggle('view')
+  document.querySelector('aside').classList.toggle('view')
+  document.querySelector('.shop-list').classList.toggle('view')
+})
 
 function calculateShop() {
   totalCount = 0;
@@ -27,7 +34,6 @@ calculateShop()
 
 deleteOrder.forEach(item => {
   item.addEventListener('click', () => {
-    debugger
     item.parentNode.remove()
     calculateShop()
   })
@@ -39,6 +45,10 @@ orderCount.forEach(item => {
       item.dataset.count = Number(item.dataset.count) + 1 
     }else if(e.target.className === 'minus') {
       item.dataset.count = Number(item.dataset.count) - 1 
+    }
+
+    if(item.dataset.count === '0') {
+      item.parentNode.remove()
     }
 
     item.children[1].innerText = item.dataset.count
